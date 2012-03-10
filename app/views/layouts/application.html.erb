@@ -2,13 +2,46 @@
 <html>
 <head>
   <title>DemoApp</title>
-  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "bootstrap", "bootstrap-responsive" %>
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
-</head>
-<body>
 
+</head>
+
+<body>	
+
+<div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="#">Navigation Bar</a>
+          <div class="nav-collapse">
+            <ul class="nav">
+          <li class="active"><a href="#">Home</a></li>
+              <li><a href="http://0.0.0.0:3000/users">Users</a></li>
+              <li><a href="http://0.0.0.0:3000/microposts">Microposts</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<div class="container">
+		
 <%= yield %>
+
+
+<hr>
+
+<footer class ="footer">
+	<p class="pull-left">Carl 2012</p>	
+	<p class="pull-right"><a href="#">Back to top</a></p>
+</footer>
+</div>
 
 </body>
 </html>
