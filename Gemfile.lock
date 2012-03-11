@@ -30,7 +30,6 @@ GEM
       multi_json (~> 1.0)
     arel (3.0.2)
     builder (3.0.0)
-    closure-compiler (1.1.6)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -103,12 +102,14 @@ GEM
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.32)
+    uglifier (1.2.3)
+      execjs (>= 0.3.0)
+      multi_json (>= 1.0.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  closure-compiler
   coffee-rails (~> 3.2.1)
   jquery-rails
   pg
@@ -116,3 +117,4 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   sqlite3
   thin
+  uglifier (>= 1.0.3)
