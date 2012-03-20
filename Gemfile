@@ -10,7 +10,7 @@ group :development, :test do
 end
 
 group :production, :staging do
-	gem 'pg'
+	gem "pg"
 end
 
 group :production do
