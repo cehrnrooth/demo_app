@@ -3,10 +3,10 @@ DemoApp::Application.routes.draw do
 
   resources :users
   
-  root :to => 'users#home'
+  root :to => 'users#index'
   
-  match '/user', :to => 'users#home'
-  match '/micropost', :to => 'microposts#home'
+  match '/user', :to => 'users#index'
+  match '/micropost', :to => 'microposts#index'
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
