@@ -21,9 +21,9 @@
           <a class="brand" href="#">Navigation Bar</a>
           <div class="nav-collapse">
             <ul class="nav">
-          <li class="active"><a href="#">Home</a></li>
-              <li><a href="http://0.0.0.0:3000/users">Users</a></li>
-              <li><a href="http://0.0.0.0:3000/microposts">Microposts</a></li>
+          <li class="active"><%= link_to "Home", root_path %></li>
+              <li><%= link_to "Users", user_path %></li>
+              <li><%= link_to "Microposts", micropost_path %></li>
             </ul>
           </div>
         </div>
